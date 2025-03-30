@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff7f50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 20px;
+        }
+
+        .recipe-card {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .recipe-card h2 {
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .recipe-details {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .recipe-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 22px;
+            border-bottom: 2px solid #ff7f50;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    My Recipe Book
+</header>
+
+<section class="recipes">
+    <a href="#recipe1" class="recipe-card">
+        <img src="Recipe 1.jpg" alt="Recipe 1" />
+        <h2>Recipe 1</h2>
+    </a>
+    <a href="#recipe2" class="recipe-card">
+        <img src="Recipe 2.jpg" alt="Recipe 2" />
+        <h2>Recipe 2</h2>
+    </a>
+    <a href="#recipe3" class="recipe-card">
+      <img src="Recipe 3.jpg" alt="Recipe 3" />
+        <h2>Recipe 3</h2>
+    </a>
+</section>
+
+<div id="recipe1" class="recipe-details">
+    <img src="Recipe 1.jpg" alt="Recipe 1" />
+    <h2>Ingredients</h2>
+    <ul>
+        <li>Pasta</li>
+        <li>Tomato Sauce</li>
+        <li>Cheese</li>
+        <li>Olive Oil</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+        <li>Boil pasta in salted water.</li>
+        <li>Heat tomato sauce and add cooked pasta.</li>
+        <li>Top with cheese and serve hot.</li>
+    </ol>
+</div>
+
+<div id="recipe2" class="recipe-details">
+    <img src="Recipe 2.jpg" alt="Recipe 2" />
+    <h2>Ingredients</h2>
+    <ul>
+        <li>Lettuce</li>
+        <li>Tomato</li>
+        <li>Cucumber</li>
+        <li>Olive Oil & Vinegar</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+        <li>Chop all vegetables.</li>
+        <li>Mix with olive oil and vinegar.</li>
+        <li>Serve fresh.</li>
+    </ol>
+</div>
+
+<div id="recipe3" class="recipe-details">
+    <img src="Recipe 3.jpg" alt="Recipe 3" />
+    <h2>Ingredients</h2>
+    <ul>
+        <li>Chicken</li>
+        <li>Coconut Milk</li>
+        <li>Curry Powder</li>
+        <li>Onions & Garlic</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+        <li>Sauté onions and garlic in oil.</li>
+        <li>Add chicken and curry powder, cook until browned.</li>
+        <li>Add coconut milk and simmer.</li>
+        <li>Serve with rice.</li>
+    </ol>
+</div>
+
+</body>
+</html>
